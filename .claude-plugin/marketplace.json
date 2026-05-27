@@ -13,8 +13,8 @@
     {
       "name": "splashifypro",
       "source": {
-        "source": "github",
-        "repo": "splashifypro/claude-plugin"
+        "source": "url",
+        "url": "https://github.com/splashifypro/claude-plugin.git"
       },
       "description": "Drive a Splashify Pro account from Claude Code — every WhatsApp/RCS/Instagram action via the splashify CLI. The CLI holds the user's oc_live_ token; Claude never sees it.",
       "version": "1.0.0",
