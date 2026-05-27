@@ -7,7 +7,7 @@
   },
   "metadata": {
     "description": "Official Splashify Pro plugin for Claude Code — WhatsApp/RCS messaging, broadcasts, templates, contacts, AI agents, email marketing, and analytics. Drives the splashify CLI; no credentials in the plugin.",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
   "plugins": [
     {
@@ -17,7 +17,7 @@
         "url": "https://github.com/splashifypro/claude-plugin.git"
       },
       "description": "Drive a Splashify Pro account from Claude Code — every WhatsApp/RCS/Instagram action via the splashify CLI. The CLI holds the user's oc_live_ token; Claude never sees it.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Splashify Pro",
         "url": "https://splashifypro.com"

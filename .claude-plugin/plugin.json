@@ -1,6 +1,6 @@
 {
   "name": "splashifypro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Drive a Splashify Pro account from Claude Code — send WhatsApp/RCS/Instagram messages, run broadcasts, manage contacts, templates, AI agents, email marketing, and analytics. Wraps the splashify CLI, so the user's oc_live_ token stays in ~/.splashify/config.json and never enters Claude's context.",
   "author": {
     "name": "Splashify Pro",

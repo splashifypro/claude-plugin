@@ -4,6 +4,17 @@ All notable changes to the Splashify Pro Claude Code plugin are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and
 this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] — 2026-05-27
+
+### Fixed
+- **Plugin install no longer requires an SSH key.** `marketplace.json` previously
+  declared the plugin's source as `{"source": "github", "repo": "..."}`, which
+  Claude Code resolves to an SSH clone URL (`git@github.com:...`) — every user
+  without a GitHub-registered SSH key hit `Permission denied (publickey)`.
+  Switched to the `{"source": "url", "url": "https://…/.git"}` form so the
+  install does an anonymous HTTPS clone of the public repo. Matches the
+  convention used by every plugin in `claude-plugins-official`.
+
 ## [1.0.0] — 2026-05-27
 
 Initial release.
