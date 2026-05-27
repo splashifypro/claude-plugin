@@ -1,0 +1,42 @@
+{
+  "name": "splashifypro",
+  "owner": {
+    "name": "Splashify Pro",
+    "email": "support@splashifypro.com",
+    "url": "https://splashifypro.com"
+  },
+  "metadata": {
+    "description": "Official Splashify Pro plugin for Claude Code — WhatsApp/RCS messaging, broadcasts, templates, contacts, AI agents, email marketing, and analytics. Drives the splashify CLI; no credentials in the plugin.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "splashifypro",
+      "source": {
+        "source": "github",
+        "repo": "splashifypro/claude-plugin"
+      },
+      "description": "Drive a Splashify Pro account from Claude Code — every WhatsApp/RCS/Instagram action via the splashify CLI. The CLI holds the user's oc_live_ token; Claude never sees it.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Splashify Pro",
+        "url": "https://splashifypro.com"
+      },
+      "homepage": "https://splashifypro.com",
+      "license": "MIT",
+      "category": "messaging",
+      "keywords": [
+        "whatsapp",
+        "rcs",
+        "messaging",
+        "broadcasts",
+        "templates",
+        "contacts",
+        "marketing",
+        "splashify",
+        "ai-agents",
+        "email-marketing"
+      ]
+    }
+  ]
+}

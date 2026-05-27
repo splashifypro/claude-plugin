@@ -1,0 +1,28 @@
+{
+  "name": "splashifypro",
+  "version": "1.0.0",
+  "description": "Drive a Splashify Pro account from Claude Code — send WhatsApp/RCS/Instagram messages, run broadcasts, manage contacts, templates, AI agents, email marketing, and analytics. Wraps the splashify CLI, so the user's oc_live_ token stays in ~/.splashify/config.json and never enters Claude's context.",
+  "author": {
+    "name": "Splashify Pro",
+    "email": "support@splashifypro.com",
+    "url": "https://splashifypro.com"
+  },
+  "homepage": "https://splashifypro.com",
+  "repository": "https://github.com/splashifypro/claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "whatsapp",
+    "rcs",
+    "messaging",
+    "broadcasts",
+    "templates",
+    "contacts",
+    "marketing",
+    "campaigns",
+    "splashify",
+    "ai-agents",
+    "email-marketing",
+    "instagram"
+  ],
+  "skills": "./skills/"
+}
