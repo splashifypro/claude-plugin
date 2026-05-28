@@ -95,20 +95,31 @@ splashify expenses export     [--period …] [--limit N] [--out file.csv]
 `expenses export` writes a CSV to disk — confirm the output path with the
 user before invoking (so they know where to look afterward).
 
-## AI credits
+## AI credits & Voice AI balance
+
+The dashboard surfaces these as two separate cards — the CLI mirrors that
+with two dedicated top-level commands. Use them by default; reach for
+`splashify credits` only when the user explicitly wants all three sections
+fetched in one shot.
 
 ```
-splashify credits                            # AI credits + voice AI rate + agents
-splashify credits ai                         # AI credit balance
-splashify credits transactions               # AI credit ledger
-splashify credits voice                      # voice AI rate, balance, trial, minutes
-splashify credits agents                     # voice AI agents
+splashify ai-credits                         # AI credit balance + last recharge
+splashify ai-credits transactions            # AI credit ledger
+splashify voice-credits                      # voice AI rate, balance, trial, available minutes
+splashify voice-credits agents               # voice AI agents
+
+splashify credits                            # consolidated (AI + voice rate + agents)
+splashify credits ai                         # same as `ai-credits`
+splashify credits voice                      # same as `voice-credits`
 ```
 
-`credits voice` returns the per-minute voice rate, the trial-minutes
-remaining, and the paid-minute balance. When the user asks "how many calls
-can I make", compute trial + paid minutes ÷ average call length and surface
-the assumption.
+`voice-credits` returns the per-minute voice rate, the trial-minutes
+remaining, the paid-minute balance, and `available_minutes` (the
+spendable runway). When the user asks "how many calls can I make",
+surface `available_minutes` directly — the backend already divides
+`ai_credit_balance` by `rate_per_minute`. If they want to plan around an
+average call length, divide `available_minutes` by that length and
+surface the assumption explicitly.
 
 ## Activity logs (audit trail)
 

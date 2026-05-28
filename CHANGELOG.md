@@ -4,6 +4,21 @@ All notable changes to the Splashify Pro Claude Code plugin are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and
 this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.2] — 2026-05-28
+
+### Changed
+- **AI credits and Voice AI balance are now reachable as top-level CLI
+  commands.** The dashboard surfaces them as two separate cards; the
+  plugin now mirrors that.
+  - `splashify ai-credits` → AI credit balance + last recharge
+  - `splashify ai-credits transactions` → AI credit ledger
+  - `splashify voice-credits` → voice AI rate, balance, trial, available minutes
+  - `splashify voice-credits agents` → voice AI agents
+  `splashify credits` still works as the consolidated three-in-one view.
+  Updated [`splashify-analytics`](skills/splashify-analytics/SKILL.md) and
+  [`cli-reference.md`](references/cli-reference.md) accordingly. Requires
+  CLI ≥ the release containing `splashifypro/cli@3fedabb`.
+
 ## [1.0.1] — 2026-05-27
 
 ### Fixed

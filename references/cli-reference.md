@@ -305,14 +305,24 @@ splashify activity --actor <user_id>
 splashify activity --search "…"
 ```
 
-## AI credits
+## AI credits & Voice AI balance
+
+The dashboard shows these as two separate cards — the CLI exposes each one
+as its own top-level command. `splashify credits` is the consolidated
+overview (all three sections in one response) when you want everything
+at once.
 
 ```
-splashify credits                 AI credits + voice AI rate + agents
-splashify credits ai              AI credit balance
-splashify credits transactions    AI credit ledger
-splashify credits voice           Voice AI rate, balance, trial, minutes
-splashify credits agents          Voice AI agents
+splashify ai-credits                 AI credit balance + last recharge
+splashify ai-credits transactions    AI credit ledger
+splashify voice-credits              Voice AI rate, balance, trial, available minutes
+splashify voice-credits agents       Voice AI agents
+
+splashify credits                    Consolidated overview (AI + voice rate + agents)
+splashify credits ai                 Alias for `splashify ai-credits`
+splashify credits voice              Alias for `splashify voice-credits`
+splashify credits transactions       Alias for `splashify ai-credits transactions`
+splashify credits agents             Alias for `splashify voice-credits agents`
 ```
 
 ## Support tickets
